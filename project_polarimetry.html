@@ -42,7 +42,7 @@
 					<article id="main">
 						<header>
 							<h2>Measuring the polarization fraction and profile for a clumpy star-forming galaxy at $z = 3.4$</h2>
-							<p>What is the origin of the Lyman-$\alpha$ emission?</p>
+							<p>What is the origin of the Lyman-alpha emission?</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
@@ -59,21 +59,31 @@
 									Different processes produce similar spectra. To disentangle them it is key to observe the direction and degree of polarization of the Ly$\alpha$ emission.</p>
 								
 								<h3>How polarization can solve it</h3>
-								
-								<p>By measuring the polarization fraction $P$, it is possible to distinguish between the different scenarios: <br>
-								$\bullet$ if $P \! > \! 10-20 \%$, the Ly$\alpha$ photons are produced in star-forming clumps, and then scattered out~[11], and it is possible to reconstruct the geometry (i.e., static or expanding ellipsoid, biconical outflow) of the scattering medium and constrain the feedback properties of the clumps, a key constraint for simulations. <br>
-								$\bullet$ If $P\! < \! 10\%$, including a non detection, the emission is due to the gas cooling or to fluorescent radiation from an external ionizing field, never detected before at $z \! \sim \! 3$.  
-							    </p>
+								<p>The Ly$\alpha$ degree of polarization increases if photons are scattered in a preferential direction, and the resulting value mainly depends on two fundamental factors: the production mechanism and site where the Ly$\alpha$ photons are created, and the geometry of the gas where they scatter before escaping, being in particular sensitive to the isotropy and homogeneity of the emission and gas distribution.
+								Due to the observational difficulty of measuring the Ly$\alpha$ degree of polarization of distant sources and the limited number of available (spectro-) polarimeters intended for extragalactic use, only a few studies that map the polarization of Ly$\alpha$ are currently present, and none of them targeted typical star-forming galaxies at high-$z$.
+							</p>
 
 								<h3>The target and my work</h3>
-								<span class="image right"><img src="images/system_pol.png" /></span> 
-								<p> I am using FORS2 PMOS observations to study the polarization fraction and profile of the Ly$\alpha$ profile of a star forming galaxy at $z=3.4$ (image on the right).
-									In the slit, the two most magnified multiple images (M1 and M2) are included. Given that this kind of study has never been done in the past, having two multiple images of the same galaxy is extremely important to double check the results of our work. 
-									I completed the data reduction, by using the EsoRex tool and self developed Python scripts, and measured the polarization fraction. Currently, we are working on the comparison with state-of-the-art polarization models.
+								<p> In my work we put novel constraints on the geometry of the HI region surrounding a clumpy star-forming galaxy at $z \approx 3.4$, Abell 2895a, strongly lensed into three multiple images by the cluster of galaxies Abell 2895 (image on the left). 
+									We made use of new deep (18 hours, PI: A. Zanella) VLT/FORS2 observations taken with the Polarimetric Multi Object Spectroscopy (PMOS). Our main findings are: 
+									<ol>
+										<li> We obtained upper limits of 4.6\%, 5.8\%, and 6.5\% at the $1\sigma$, $2\sigma$, and $3\sigma$ level on the Ly$\alpha$ degree of polarization. We showed that polarization constraints are complementary to those usually achieved by using only the total Ly$\alpha$ intensity and line profile, demonstrating the effectiveness of this novel technique.  </li>
+										<li> To interpret the observational constraints, we developed a Ly$\alpha$ radiative transfer model including a bipolar wind geometry (characterized by the opening angle $\theta_{\rm o, Wind}$, the radial expansion velocity $v_{\rm exp}$, and the HI column density parameters) and a central source that emits Ly$\alpha$ photons with a Gaussian profile of width $\sigma$. We assumed N_{\rm HI} $\sim 10^{20} {\rm cm^{-2}}$, $v_{\rm exp} \sim 200 {\rm km/s}$, and $\sigma \sim 150 {\rm km/s}$ and tried different $\theta_{\rm o, Wind}$ values (from 0° to 90° with steps of 15°) and simulated different line of sight angles ($\theta_{\rm LOS} from 0° to 90° with steps of 10°).</li>
+										<li> In order to reproduce the spectral profile and shift with respect to the systemic velocity of the Ly$\alpha$ line, we needed Ly$\alpha$ photons that are created in the inner regions and that undergo several scattering events before escaping, and $\theta_{\rm LOS}<\theta_{\rm o, Wind}$ (i.e., observing in the direction of the outflow) and $\theta_{\rm o, Wind}$ > 15°$</li>
+										<li> The results are summarized in the figure on the right, for all the cases varying $\theta_{\rm LOS}$ ($x$-axis) and $\theta_{\rm o, Wind}$ ($y$-axis): the greyscale represents the $\chi^2$ between the observations and the simulated spectra. Whiter colors express more agreement (dark cases are those where the simulated Ly$\alpha$ is not shifted with respect to the systemic velocity, and/or is narrower or wider). <br>
+										Red hatched regions are canceled from the polarization constraints, as the simulated polarization is larger than the observed upper limit (at 1$\sigma$).</li>
+									</ol>
+									In conclusion, the cases that well reproduce the constraints from the spectrum and the polarization, are those whiter and not canceled in red.
 								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-7"><span class="image fit"><img src="images/hst_slit_pol_v3.jpg" alt="" /></span></div>
+										<div class="col-5"><span class="image fit"><img src="images/persketchino_20_200_150_nomask_new_color.jpg" alt="" /></span></div>
+									</div>
+								</div>
 
 								<h3>Want to read more?</h3>
-								<p></p>I am writing a paper about this work, but it is still not public. But I am happy to discuss about the project, please send me <a href="mailto:andrea.bolamperti@phd.unipd.it">an email</a>! </p>
+								<p></p>You can find more details, and useful figures, in our recently published paper, <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250201742B/abstract">Bolamperti et al. 2025</a>. </p>
 								<br>
 								<br>
 								<h4>References</h4>
@@ -90,10 +100,10 @@
 						<li><a href="https://x.com/astroabola?s=21&t=iw62Bu01wvZCeZtU0FwvXQ" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://github.com/andrea-bolamperti" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/andrea-bolamperti" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="mailto:andrea.bolamperti@phd.unipd.it" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto:abolamp@mpa-garching.mpg.de" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Andrea Bolamperti 2023 </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> <li>Images: the author and <a href="https://www.eso.org/public/images/">ESO archive</a></li> 
+						<li>&copy; Andrea Bolamperti 2025 </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> <li>Images: the author and <a href="https://www.eso.org/public/images/">ESO archive</a></li> 
 					</ul>
 				</footer>
 
